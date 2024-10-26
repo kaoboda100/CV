@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    padding: 0 10%;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #b74b4b;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    color: #b74b4b;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f1f1f1;
+}
+
+.about {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-image {
+    width: 80%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 2px solid #b74b4b;
+    border-radius: 10px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.video-frame {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #b74b4b;
+    border-radius: 10px;
+    aspect-ratio: 9 / 16;
+}
+
+.video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experience, .education {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.experience-item, .education-item {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 1.8rem;
+    color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 5%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 1rem;
+    color: #f1f1f1;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info i {
+    color: #b74b4b;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+footer {
+    background-color: #1e1e1e;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #aaa;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-social-icons {
+    margin-top: 0.5rem;
+}
+
+.footer-social-icons a {
+    color: #b74b4b;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #f1f1f1;
+}
+.profile-image {
+    width: 80%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 2px solid #b74b4b;
+    border-radius: 10px;
+    transition: transform 0.5s ease; /* Thêm transition cho hiệu ứng */
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* Tăng kích thước lên 10% khi hover */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* Thêm transition cho ảnh */
+}
+
+.profile-image:hover img {
+    transform: scale(1.1); /* Tăng kích thước của ảnh khi hover */
+}
+.video-frame {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #b74b4b;
+    border-radius: 10px;
+    aspect-ratio: 9 / 16;
+    transition: transform 0.5s ease; /* Thêm transition cho hiệu ứng */
+}
+
+.video-frame:hover {
+    transform: scale(1.05); /* Tăng kích thước lên 5% khi hover */
+}
+
+.video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* Thêm transition cho video */
+}
+
+.video-frame:hover video {
+    transform: scale(1.05); /* Tăng kích thước của video khi hover */
+}
+.video-frame {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #b74b4b;
+    border-radius: 10px;
+    aspect-ratio: 9 / 16;
+    transition: transform 0.5s ease;
+}
+
+.video-frame:hover {
+    transform: scale(1.05);
+}
+
+.video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.video-frame:hover video {
+    transform: scale(1.05);
+}
+
+/* Tab đen trong suốt */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%; /* Chiếm 20% chiều cao của video */
+    background-color: rgba(0, 0, 0, 0.7); /* Màu đen trong suốt */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Ẩn tab mặc định */
+    transition: opacity 0.3s ease; /* Thêm transition cho hiệu ứng */
+}
+
+.video-frame:hover .overlay {
+    opacity: 1; /* Hiện tab khi hover */
+}
+
+.overlay p {
+    color: #fff; /* Màu chữ trắng */
+    font-size: 1.2rem; /* Kích thước chữ */
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%; /* Chiếm 20% chiều cao của video */
+    background-color: rgba(0, 0, 0, 0.7); /* Màu đen trong suốt */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Ẩn tab mặc định */
+    transition: opacity 0.3s ease; /* Thêm transition cho hiệu ứng */
+    pointer-events: none; /* Ngăn chặn tương tác với overlay */
+}
+
+.video-frame:hover .overlay {
+    opacity: 1; /* Hiện tab khi hover */
+    pointer-events: auto; /* Cho phép tương tác khi hover */
+}
+
+.overlay h1 {
+    color: #fff; /* Màu chữ trắng */
+    font-size: 1.2rem; /* Kích thước chữ */
+    text-align: center;
+    user-select: none; /* Ngăn chặn việc chọn văn bản */
+}
+.experience-item, .education-item {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    transition: transform 0.3s ease; /* Thêm transition cho hiệu ứng */
+}
+
+.experience-item:hover, .education-item:hover {
+    transform: scale(1.05); /* Tăng kích thước lên 5% khi hover */
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 1.8rem;
+    color: #f1f1f1;
+}
